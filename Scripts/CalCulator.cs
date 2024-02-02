@@ -55,6 +55,46 @@ public class CalCulator : MonoBehaviour
         UpdateUI();
     }
 
+    public void AddNegative()
+    {
+        if (SelectedOperator == "")
+        {
+            if (SelectedOperator == "-")
+            {
+                inputString = inputString.Substring(1, inputString.Length - 1);
+            }
+            else
+            {
+                inputString =  '-' + inputString ;
+            }
+        }
+        else
+        {
+            char oprtr = char.Parse(SelectedOperator);
+            string[] inputValueArray = inputString.Split(oprtr);
+
+
+            string firstInput="";
+            string SecondInput="";
+
+            firstInput = inputValueArray[0];
+            SecondInput = inputValueArray[1];
+            
+
+            if (SecondInput[0] == '-')
+            {
+                SecondInput = SecondInput.Substring(1, SecondInput.Length - 1);
+            }
+            else
+            {
+                SecondInput = '-' + SecondInput;
+            }
+
+            inputString = firstInput + SelectedOperator + SecondInput;
+        }
+        UpdateUI();
+    }
+
   public void EarasecChar()
     {
         string CharToEarse = inputString[inputString.Length - 1].ToString();
@@ -76,7 +116,36 @@ public class CalCulator : MonoBehaviour
     public void Clear()
     {
         inputString = "";
+        SelectedOperator = "";
         UpdateUI();
     }
    
+    public void CalCulation()
+    {
+        char oprtr = char.Parse(SelectedOperator);
+        string[] inputValueArray = inputString.Split(oprtr);
+
+        double inputOne = double.Parse(inputValueArray[0]);
+        double inputTwo = double.Parse(inputValueArray[1]);
+        double result = 0;
+
+        switch (SelectedOperator)
+        {
+            case "+":
+                result = inputOne + inputTwo;
+                break;
+            case "/":
+                result = inputOne / inputTwo;
+                break;
+            case "*":
+                result = inputTwo * inputOne;
+                break;
+            case "-":
+                result = inputOne - inputTwo;
+                break;
+        }
+        outputString = result.ToString();
+        UpdateUI();
+    }
+    
 }
