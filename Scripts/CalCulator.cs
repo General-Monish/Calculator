@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CalCulator : MonoBehaviour
 {
    public TextMeshProUGUI InputText, OutputText;
     public string inputString, outputString, SelectedOperator;
     private bool decilmalHasAssign;
+    public GameObject Red;
     // Start is called before the first frame update
     void Start()
     {
@@ -147,5 +149,10 @@ public class CalCulator : MonoBehaviour
         outputString = result.ToString();
         UpdateUI();
     }
-    
+
+    public void ChangeUITheme()
+    {
+        // Toggle the active state of the Red GameObject
+        Red.SetActive(!Red.activeSelf);
+    }
 }
