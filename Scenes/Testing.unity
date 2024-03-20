@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 670000742}
   - component: {fileID: 670000741}
   - component: {fileID: 670000740}
+  - component: {fileID: 670000744}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -179,7 +180,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -378,6 +379,19 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &670000744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670000736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100c8a1906c1390488aa2c0986441523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 2218272577987833619, guid: 82bb8186637184a4da543bb5cc4b7828, type: 3}
 --- !u!1001 &5614172881661762406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -392,11 +406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3106148302545957058, guid: 2a14f5d4bc9bb64459fd33d052565a04, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.27925578
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 3106148302545957058, guid: 2a14f5d4bc9bb64459fd33d052565a04, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7679534
+      value: -2.22
       objectReference: {fileID: 0}
     - target: {fileID: 3106148302545957058, guid: 2a14f5d4bc9bb64459fd33d052565a04, type: 3}
       propertyPath: m_LocalPosition.z
@@ -430,6 +444,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4745986242585385592, guid: 2a14f5d4bc9bb64459fd33d052565a04, type: 3}
+      propertyPath: sprite1
+      value: 
+      objectReference: {fileID: 7865019457717262063, guid: 6410ee55061945744aac1dfda760a2c8, type: 3}
+    - target: {fileID: 4745986242585385592, guid: 2a14f5d4bc9bb64459fd33d052565a04, type: 3}
+      propertyPath: sprite2
+      value: 
+      objectReference: {fileID: 4627840494023364730, guid: 1ef1727b26b284043bd06f91c299cfeb, type: 3}
+    - target: {fileID: 4745986242585385592, guid: 2a14f5d4bc9bb64459fd33d052565a04, type: 3}
+      propertyPath: sprite3
+      value: 
+      objectReference: {fileID: 5546840292704447536, guid: c049e0c019a9cfe4a895265fe7210173, type: 3}
     - target: {fileID: 5023237526031088211, guid: 2a14f5d4bc9bb64459fd33d052565a04, type: 3}
       propertyPath: m_Mass
       value: 1

@@ -10,11 +10,11 @@ public class Spawner : MonoBehaviour
     Timer spawnTimer;
 
     [SerializeField]
-    Sprite sprite1;
+    GameObject sprite1;
     [SerializeField]
-    Sprite sprite2;
+    GameObject sprite2;
     [SerializeField]
-    Sprite sprite3;
+    GameObject sprite3;
 
     const float minSpawnDelay=1;
     const float maxSpawnDelay=2;
@@ -59,18 +59,19 @@ public class Spawner : MonoBehaviour
         player.transform.position = worldLocation;
 
         // setting random sprite for new player
-        SpriteRenderer spriteRenderer = player.GetComponent<SpriteRenderer>();
+        GameObject players;
         int spriteNumber = Random.Range(0, 3);
         if(spriteNumber == 0)
         {
-            spriteRenderer.sprite = sprite1;
+            players =Instantiate<GameObject>(sprite1,worldLocation,Quaternion.identity);
         }else if(spriteNumber == 1)
         {
-            spriteRenderer.sprite = sprite2;
+            players = Instantiate<GameObject>(sprite2, worldLocation, Quaternion.identity);
         }
         else {
 
-            spriteRenderer.sprite = sprite3;
-        };
+            players = Instantiate<GameObject>(sprite3, worldLocation, Quaternion.identity);
+        }
+
     }
 }

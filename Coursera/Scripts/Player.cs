@@ -10,8 +10,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        const float minImpulseForce = 1f;
-        const float maxImpulseForce = 3f;
+        const float minImpulseForce = 3f;
+        const float maxImpulseForce = 5f;
         float angel=Random.Range(0,2*Mathf.PI);
         Vector2 direction=new Vector2(Mathf.Cos(angel),Mathf.Sin(angel));
         float magnitude=Random.Range(minImpulseForce,maxImpulseForce);
