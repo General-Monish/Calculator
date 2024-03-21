@@ -20,7 +20,7 @@ public class Playerr : MonoBehaviour
         
         Vector3 position=Input.mousePosition;
         position.z= -Camera.main.transform.position.z;
-        position=Camera.main.ScreenToWorldPoint(position);
+       position=Camera.main.ScreenToWorldPoint(position);
 
         // moving char
         transform.position = position;

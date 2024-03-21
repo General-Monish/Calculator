@@ -111,7 +111,7 @@ TextureImporter:
       213: 21300070
     second: RubyIdleUp2
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -128,11 +128,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -171,6 +172,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -182,6 +185,7 @@ TextureImporter:
     crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -194,511 +198,543 @@ TextureImporter:
     crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RubyRunSide1
+      name: RubySheet_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 11
         y: 1280
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 219
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffc1e50a87cc88a47bbd4e083e8fafba
-      internalID: 21300024
+      spriteID: 84f71bc6ec9b505468692d4e15a701b1
+      internalID: -332183079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyRunSide2
+      name: RubySheet_1
       rect:
         serializedVersion: 2
-        x: 256
+        x: 275
+        y: 1309
+        width: 218
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4713e08ce344f74fb40c0ee8bea09d0
+      internalID: -1732559685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubySheet_2
+      rect:
+        serializedVersion: 2
+        x: 523
         y: 1280
-        width: 256
+        width: 223
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c1a02cec162a6c47b983d54a9c32885
-      internalID: 21300026
+      spriteID: 8b6b58cb87d22f6458ee51e753284c26
+      internalID: -215546796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyRunSide3
+      name: RubySheet_3
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 788
+        y: 1309
+        width: 219
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b57e2de0a1e4f5e42912e73d627e7601
-      internalID: 21300028
+      spriteID: 5d92793dfb3ebe54096a2f1c64bc8e42
+      internalID: 7906696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyRunSide4
+      name: RubySheet_4
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 68
+        y: 1025
+        width: 140
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08613bcc10ff5b4449adae5fe5bc90c1
-      internalID: 21300030
+      spriteID: 29276491641a6454ea7fcbce8cc751ad
+      internalID: 1889912994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyRunUp1
+      name: RubySheet_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 316
+        y: 1030
+        width: 146
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92586ebc4b7bdf04ea722f4b543c10aa
-      internalID: 21300032
+      spriteID: 1afbae1504c2b9541aba5c54169511c6
+      internalID: -1599771799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyRunUp2
+      name: RubySheet_6
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 550
+        y: 1025
+        width: 145
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cc5c9c26c1f2214eb92811fa4971f31
-      internalID: 21300034
+      spriteID: d6a1b75296fdb0143ad28530c8b44f1f
+      internalID: 51585899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyRunUp3
+      name: RubySheet_7
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 819
+        y: 1025
+        width: 141
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cf21cf050e221946997b49eac9a31c5
-      internalID: 21300036
+      spriteID: 08a0e7256b89e754393f8d5aa2f92c86
+      internalID: 1210157795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyRunUp4
+      name: RubySheet_8
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 53
+        y: 769
+        width: 131
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9702950b867e6d4f9a4d948883bc3e4
-      internalID: 21300038
+      spriteID: cc7e77778489f70438071d52f73c3534
+      internalID: 671422500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyRunDown1
+      name: RubySheet_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 305
+        y: 779
+        width: 132
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4780c5d213679774caf5affac1f7850b
-      internalID: 21300040
+      spriteID: 2cf22fb668508484a93c850502d65df8
+      internalID: 1418651550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyRunDown2
+      name: RubySheet_10
       rect:
         serializedVersion: 2
-        x: 256
-        y: 768
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90e41a60271fb8b47aab659977972e1f
-      internalID: 21300042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RubyRunDown3
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 768
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f001ec1238f229a4b9e26383450a60b9
-      internalID: 21300044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RubyRunDown4
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 768
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1464943cec33614459c107b0b9f77402
-      internalID: 21300046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RubyIdleSide1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 514
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6a6cd792e690444f947f8d0464bc733
-      internalID: 21300048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RubyIdleDown1
-      rect:
-        serializedVersion: 2
-        x: 256
+        x: 564
         y: 512
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 138
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13ad34b201d932e45aa0dc711f12f114
-      internalID: 21300050
+      spriteID: 3051a44d4b3341d4daae85dcb41e7b2a
+      internalID: -811245991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyIdleUp1
+      name: RubySheet_11
       rect:
         serializedVersion: 2
-        x: 512
+        x: 831
+        y: 779
+        width: 134
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c8a043d064d3b49a319499e77e1078
+      internalID: 693233890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubySheet_12
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 511
+        width: 144
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6402630b4bf49684f8d5591d1f5e709d
+      internalID: -117285080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubySheet_13
+      rect:
+        serializedVersion: 2
+        x: 311
         y: 512
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 125
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dd3d145df2d88848b031646d912e52e
-      internalID: 21300052
+      spriteID: d53f4e97d80fa84458c1de2fbbf1ef08
+      internalID: 893362198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyLaunchDown
+      name: RubySheet_14
       rect:
         serializedVersion: 2
-        x: 768
+        x: 806
         y: 512
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 186
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d90d4d9d94edc334a83f209120aa1f8e
-      internalID: 21300054
+      spriteID: 3f2eb07bc108cf44eb170c52a85e342c
+      internalID: -1130248777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyHitSides
+      name: RubySheet_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 41
+        y: 259
+        width: 175
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5803dbcca7ed5134fba8ea62dd44e352
-      internalID: 21300056
+      spriteID: 0263437b842d81c41a2fddd7e99f1519
+      internalID: 837555531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyHitUp
+      name: RubySheet_16
       rect:
         serializedVersion: 2
-        x: 256
-        y: 254
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 296
+        y: 263
+        width: 153
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69919ef0fae1a7140825d50dbcf876b3
-      internalID: 21300058
+      spriteID: 2cae465f3f39d894392d42d10b571fcb
+      internalID: -410181890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyHitdown
+      name: RubySheet_17
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 546
+        y: 266
+        width: 165
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bb3dfeec7fe8934eb7c9bf21acc206f
-      internalID: 21300060
+      spriteID: aa9bcd0eb7475db4f944605429686d60
+      internalID: -1917746496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyLaunchUp
+      name: RubySheet_18
       rect:
         serializedVersion: 2
-        x: 768
-        y: 258
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 790
+        y: 263
+        width: 163
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31fbd7b57d5735c4280e10bcbb8f411c
-      internalID: 21300062
+      spriteID: b86644b54abfc644380642307e4a8659
+      internalID: -753121061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyLauchSides
+      name: RubySheet_19
       rect:
         serializedVersion: 2
-        x: 0
+        x: 7
+        y: 7
+        width: 237
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b55fdc037ebd9548b0452f7cdf47dde
+      internalID: 800037739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubySheet_20
+      rect:
+        serializedVersion: 2
+        x: 313
         y: 0
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 144
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e66be6f2085a7324ca79707a5a340976
-      internalID: 21300064
+      spriteID: dd5c7274edba221419dc45252c5d9ed6
+      internalID: 1733294816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyIdleSides2
+      name: RubySheet_21
       rect:
         serializedVersion: 2
-        x: 256
-        y: 2
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65276b75d23d8a84a9aef493a2bcff23
-      internalID: 21300066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RubyIdleDown2
-      rect:
-        serializedVersion: 2
-        x: 512
+        x: 566
         y: 0
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 124
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 382204a27a133bb49a14e93cc8261003
-      internalID: 21300068
+      spriteID: 986a53a06d4e5ea43bc21202557223be
+      internalID: 1971873457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RubyIdleUp2
+      name: RubySheet_22
       rect:
         serializedVersion: 2
-        x: 768
+        x: 831
         y: 0
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 129
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6ca39a6f8bd5d94e9a226b36b7c8f74
-      internalID: 21300070
+      spriteID: 66135d089840acc4a8ead1b43871fd28
+      internalID: -1827653186
       vertices: []
       indices: 
       edges: []
@@ -714,33 +750,31 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RubyRunSide1: 21300024
-      RubyRunUp4: 21300038
-      RubyRunUp1: 21300032
-      RubyRunUp3: 21300036
-      RubyHitSides: 21300056
-      RubyRunUp2: 21300034
-      RubyHitdown: 21300060
-      RubyRunDown2: 21300042
-      RubyIdleSide1: 21300048
-      RubyRunSide4: 21300030
-      RubyIdleDown2: 21300068
-      RubyIdleUp1: 21300052
-      RubyLaunchUp: 21300062
-      RubyRunSide2: 21300026
-      RubyRunDown4: 21300046
-      RubyLaunchDown: 21300054
-      RubyIdleDown1: 21300050
-      RubyRunSide3: 21300028
-      RubyRunDown3: 21300044
-      RubyLauchSides: 21300064
-      RubyIdleSides2: 21300066
-      RubyIdleUp2: 21300070
-      RubyRunDown1: 21300040
-      RubyHitUp: 21300058
-  spritePackingTag: 
+      RubySheet_0: -332183079
+      RubySheet_1: -1732559685
+      RubySheet_10: -811245991
+      RubySheet_11: 693233890
+      RubySheet_12: -117285080
+      RubySheet_13: 893362198
+      RubySheet_14: -1130248777
+      RubySheet_15: 837555531
+      RubySheet_16: -410181890
+      RubySheet_17: -1917746496
+      RubySheet_18: -753121061
+      RubySheet_19: 800037739
+      RubySheet_2: -215546796
+      RubySheet_20: 1733294816
+      RubySheet_21: 1971873457
+      RubySheet_22: -1827653186
+      RubySheet_3: 7906696
+      RubySheet_4: 1889912994
+      RubySheet_5: -1599771799
+      RubySheet_6: 51585899
+      RubySheet_7: 1210157795
+      RubySheet_8: 671422500
+      RubySheet_9: 1418651550
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
