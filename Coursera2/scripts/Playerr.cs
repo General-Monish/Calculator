@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Playerr : MonoBehaviour
 {
+   
+
     float colliderHalfWidth;
     float colliderHalfHeight;
     // Start is called before the first frame update
