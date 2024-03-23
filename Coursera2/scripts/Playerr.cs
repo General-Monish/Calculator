@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Playerr : MonoBehaviour
 {
-   
+    const float moveInputUnits=5f;
 
     float colliderHalfWidth;
     float colliderHalfHeight;
@@ -19,10 +19,19 @@ public class Playerr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        Vector3 position=Input.mousePosition;
-        position.z= -Camera.main.transform.position.z;
-       position=Camera.main.ScreenToWorldPoint(position);
+        Vector3 position=transform.position;
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        if(horizontal != 0f)
+        {
+            position.x += horizontal*moveInputUnits*Time.deltaTime;
+        }
+
+        if(position.y != 0f)
+        {
+            position.y +=vertical*moveInputUnits*Time.deltaTime;
+        }
+       
 
         // moving char
         transform.position = position;
