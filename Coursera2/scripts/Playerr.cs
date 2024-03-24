@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Playerr : MonoBehaviour
 {
-    const float moveInputUnits=5f;
+    const float moveInputUnits=10f;
 
     float colliderHalfWidth;
     float colliderHalfHeight;
@@ -22,15 +22,16 @@ public class Playerr : MonoBehaviour
         Vector3 position=transform.position;
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        if(horizontal != 0f)
+
+        if(horizontal != 0)
         {
-            position.x += horizontal*moveInputUnits*Time.deltaTime;
+            position.x += horizontal *moveInputUnits * Time.deltaTime ;
         }
 
-        if(position.y != 0f)
+        if(vertical != 0)
         {
-            position.y +=vertical*moveInputUnits*Time.deltaTime;
-        }
+            position.y += vertical * moveInputUnits * Time.deltaTime ;
+        } 
        
 
         // moving char
