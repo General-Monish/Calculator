@@ -108,7 +108,7 @@ public class Spawner : MonoBehaviour
         }
 
     }
-
+    // nothing 
 
     // set min and max for player collision rectangle
     void SetMinAndMax(Vector3 location)

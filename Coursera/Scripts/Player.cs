@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
-{
+{  // ========================================================= Coursera 1 ====================================================
     // death support
     const float TeddyBearLifespanSeconds = 10;
     Timer deathTimer;
